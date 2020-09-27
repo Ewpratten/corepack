@@ -123,5 +123,10 @@ versions = {
             "name": "hwyla-addon-horse-info",
             "file_id": 3021434,
         },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/trajectoryfabric/files
+            "name": "trajectoryfabric",
+            "file_id": 3041000,
+        },
     ],
 }

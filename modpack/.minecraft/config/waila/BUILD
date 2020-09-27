@@ -1,6 +1,5 @@
 load("//tools:templates.bzl", "expand_template")
 
-# Load files
 expand_template(
     name = "plugins",
     out = "waila_plugins.json",
