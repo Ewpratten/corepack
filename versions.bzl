@@ -24,9 +24,43 @@ versions = {
     },
     "mods": [
         {
+            # https://www.curseforge.com/minecraft/mc-mods/appleskin/files
             "name": "appleskin",
-            "file_id": "2987255",
+            "file_id": 2987255,
             "SHA256": "22478eec983e4b117cf53d6a7b84de3b92114823886f499d927bb1d5aa7eea9f",
         },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/auto-config-updated-api/files
+            "name": "auto-config-updated-api",
+            "file_id": 3044151,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/betterf3/files
+            "name": "betterf3",
+            "file_id": 3035004,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/craftpresence/files
+            "name": "craftpresence",
+            "file_id": 3060608,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files
+            "name": "fabric-api",
+            "file_id": 3049174,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/optifabric/files
+            "name":"optifabric",
+            "file_id":3060791
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/gameinfo/files
+            "name":"gameinfo",
+            "file_id":3035987
+        },
+        {
+            
+        }
     ],
 }
