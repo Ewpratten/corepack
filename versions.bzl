@@ -19,8 +19,8 @@ versions = {
         },
     },
     "optifine": {
-        "url": "https://ewpratten.keybase.pub/OptiFine_1.16.3_HD_U_G3.jar",
-        "SHA256": "39e3b20ac72135f857a1515e8843f64037f62ed60a7ea917bf4ab9c483f4b06a",
+        "url": "https://ewpratten.keybase.pub/OptiFine_1.16.2_HD_U_G3.jar",
+        "SHA256": "",
     },
     "mods": [
         {

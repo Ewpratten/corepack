@@ -39,5 +39,5 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: corepack_waterfall.zip
+          name: corepack_waterfall
           path: ./bazel-bin/modpack/corepack.zip
