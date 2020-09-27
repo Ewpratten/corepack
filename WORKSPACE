@@ -2,7 +2,7 @@ workspace(
     name = "corepack",
 )
 
-load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive", "http_file")
 
 # Load Python3 and needed deps
 http_archive(
@@ -24,3 +24,58 @@ pip3_import(
 load("@python_deps//:requirements.bzl", "pip_install")
 
 pip_install()
+
+http_archive(
+    name = "bazel_skylib",
+    sha256 = "1c531376ac7e5a180e0237938a2536de0c54d93f5c278634818e0efc952dd56c",
+    urls = [
+        "https://github.com/bazelbuild/bazel-skylib/releases/download/1.0.3/bazel-skylib-1.0.3.tar.gz",
+        "https://mirror.bazel.build/github.com/bazelbuild/bazel-skylib/releases/download/1.0.3/bazel-skylib-1.0.3.tar.gz",
+    ],
+)
+
+load("@bazel_skylib//:workspace.bzl", "bazel_skylib_workspace")
+
+bazel_skylib_workspace()
+
+# Minecraft maven
+MAVEN_REPOSITORY_RULES_VERSION = "1.2.0"
+
+MAVEN_REPOSITORY_RULES_SHA = "9e23155895d2bfc60b35d2dfd88c91701892a7efba5afacdf00cebc0982229fe"
+
+http_archive(
+    name = "maven_repository_rules",
+    sha256 = MAVEN_REPOSITORY_RULES_SHA,
+    strip_prefix = "bazel_maven_repository-%s" % MAVEN_REPOSITORY_RULES_VERSION,
+    type = "zip",
+    urls = ["https://github.com/square/bazel_maven_repository/archive/%s.zip" % MAVEN_REPOSITORY_RULES_VERSION],
+)
+
+load("@maven_repository_rules//maven:maven.bzl", "maven_repository_specification")
+load("@maven_repository_rules//maven:jetifier.bzl", "jetifier_init")
+load("//:versions.bzl", "versions")
+
+jetifier_init()
+
+# This pulls in every needed mod from curseforge
+maven_repository_specification(
+    name = "maven",
+    artifacts = {"curse.maven:{descriptor}:{id}".format(
+        descriptor = x["name"],
+        id = x["file_id"],
+    ): {
+        "insecure": x.get("SHA256", None) == None,
+        "sha256": x.get("SHA256", ""),
+    } for x in versions["mods"]},
+    repository_urls = [
+        "https://www.cursemaven.com",
+        "https://repo1.maven.org/maven2",
+    ],
+)
+
+# Manually pull in optifine
+http_file(
+    name = "optifine",
+    sha256 = versions["optifine"]["SHA256"],
+    urls = [versions["optifine"]["url"]],
+)

@@ -1,6 +1,15 @@
 load("//tools:templates.bzl", "expand_template")
 load("//:versions.bzl", "versions")
 
+filegroup(
+    name = "modpack",
+    srcs = [
+        ":instance_cfg",
+        ":mmc_pack_json",
+        "//modpack/.minecraft:minecraft",
+    ],
+)
+
 expand_template(
     name = "instance_cfg",
     out = "instance.cfg",
@@ -9,4 +18,15 @@ expand_template(
         "{MODPACK_VERSION}": versions["corepack"]["version"],
     },
     template = "instance.cfg.in",
+)
+
+expand_template(
+    name = "mmc_pack_json",
+    out = "mmc-pack.json",
+    substitutions = {
+        "{LWJGL_VERSION}": versions["multimc"]["pack"]["lwjgl"]["version"],
+        "{MINECRAFT_VERSION}": versions["multimc"]["pack"]["minecraft"]["version"],
+        "{FABRIC_VERSION}": versions["multimc"]["pack"]["fabric"]["version"],
+    },
+    template = "mmc-pack.json.in",
 )
