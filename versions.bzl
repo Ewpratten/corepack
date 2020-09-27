@@ -145,6 +145,6 @@ versions = {
     ],
     "bsl_tweaks": {
         # https://bitslablab.com/bslminipacks/#download
-        "url": "https://download2194.mediafire.com/ia9sud9exujg/hrijar2m6pnhsnt/BSL+Minipacks.zip",
+        "url": "https://ewpratten.keybase.pub/bsl_minipack.zip",
     },
 }
