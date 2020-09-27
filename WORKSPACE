@@ -79,3 +79,25 @@ http_file(
     sha256 = versions["optifine"]["SHA256"],
     urls = [versions["optifine"]["url"]],
 )
+
+# Pull in shaders
+_ = [
+    http_file(
+        name = shader["name"],
+        urls = [
+            shader["url"],
+        ],
+    )
+    for shader in versions["shaders"]
+]
+
+# Pull in textures
+_ = [
+    http_file(
+        name = texture["name"],
+        urls = [
+            texture["url"],
+        ],
+    )
+    for texture in versions["textures"]
+]

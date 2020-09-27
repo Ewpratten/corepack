@@ -129,4 +129,23 @@ versions = {
             "file_id": 3041000,
         },
     ],
+    "shaders": [
+        {
+            # https://www.curseforge.com/minecraft/customization/bsl-shaders/files
+            "name": "bsl",
+            "url": "https://media.forgecdn.net/files/3037/267/BSL_v7.2.zip",
+        },
+    ],
+    "textures": [
+        {
+            # https://www.curseforge.com/minecraft/texture-packs/rodrigos-pack/files
+            "name": "rodrigos_pack",
+            "url": "https://media.forgecdn.net/files/3058/561/Rodrigo%27s+Pack+(1.16).zip",
+        },
+        {
+            # https://bitslablab.com/bslminipacks/#download
+            "name": "bsl_minipack",
+            "url": "https://download2194.mediafire.com/ia9sud9exujg/hrijar2m6pnhsnt/BSL+Minipacks.zip",
+        },
+    ],
 }
