@@ -14,9 +14,17 @@ expand_template(
     template = "optionsshaders.txt.in",
 )
 
+expand_template(
+    name = "minecraft_options",
+    out = "options.txt",
+    substitutions = {},
+    template = "options.txt.in",
+)
+
 filegroup(
     name = "minecraft",
     srcs = [
+        ":minecraft_options",
         ":optifine_options",
         ":optifine_shaders_options",
         "//modpack/.minecraft/config",
