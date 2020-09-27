@@ -118,5 +118,10 @@ versions = {
             "file_id": 3063315,
             "SHA256": "80f66196a50a5c39c590be49d81dabe87015934b6a7264a87632ae9fda8122f9",
         },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/hwyla-addon-horse-info/files
+            "name": "hwyla-addon-horse-info",
+            "file_id": 3021434,
+        },
     ],
 }

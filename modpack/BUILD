@@ -4,6 +4,23 @@ load("//:versions.bzl", "versions")
 filegroup(
     name = "modpack",
     srcs = [
+        ":modpack_files",
+        ":zip",
+    ],
+)
+
+genrule(
+  name = "zip",
+  srcs = [
+      ":modpack_files"
+  ],
+  outs = ["corepack.zip"],
+  cmd = "cd bazel-out/k8-fastbuild/bin/modpack && zip ../../../../$@ $$(echo \"$(SRCS)\" | sed 's|bazel-out/k8-fastbuild/bin/modpack/||g' -)",
+)
+
+filegroup(
+    name = "modpack_files",
+    srcs = [
         ":instance_cfg",
         ":mmc_pack_json",
         "//modpack/.minecraft:minecraft",
