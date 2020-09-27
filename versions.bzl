@@ -19,8 +19,8 @@ versions = {
         },
     },
     "optifine": {
-        "url": "https://optifine.net/downloadx?f=OptiFine_1.16.2_HD_U_G3.jar&x=3439c64733a211dfa7cef41c66c36a5c",
-        "SHA256": "c72f68b911dc0b1a1e2678c2178a84b0f5cf00a3e533e20dccecdb620fb3acba",
+        "url": "https://ewpratten.keybase.pub/OptiFine_1.16.3_HD_U_G3.jar",
+        "SHA256": "39e3b20ac72135f857a1515e8843f64037f62ed60a7ea917bf4ab9c483f4b06a",
     },
     "mods": [
         {
