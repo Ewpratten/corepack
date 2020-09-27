@@ -142,10 +142,9 @@ versions = {
             "name": "rodrigos_pack",
             "url": "https://media.forgecdn.net/files/3058/561/Rodrigo%27s+Pack+(1.16).zip",
         },
-        {
-            # https://bitslablab.com/bslminipacks/#download
-            "name": "bsl_minipack",
-            "url": "https://download2194.mediafire.com/ia9sud9exujg/hrijar2m6pnhsnt/BSL+Minipacks.zip",
-        },
     ],
+    "bsl_tweaks": {
+        # https://bitslablab.com/bslminipacks/#download
+        "url": "https://download2194.mediafire.com/ia9sud9exujg/hrijar2m6pnhsnt/BSL+Minipacks.zip",
+    },
 }

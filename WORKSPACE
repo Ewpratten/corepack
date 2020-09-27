@@ -4,6 +4,12 @@ workspace(
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive", "http_file")
 
+# Group the sources of the library so that CMake rule have access to it
+all_content = """
+filegroup(name = "all", srcs = glob(["**"]), visibility = ["//visibility:public"])
+package(default_visibility = ["//visibility:public"])
+"""
+
 # Load Python3 and needed deps
 http_archive(
     name = "rules_python",
@@ -101,3 +107,10 @@ _ = [
     )
     for texture in versions["textures"]
 ]
+
+# Manually load the bsl pack
+http_archive(
+    name = "bsl_tweaks",
+    build_file_content = all_content,
+    url = versions["bsl_tweaks"]["url"],
+)
