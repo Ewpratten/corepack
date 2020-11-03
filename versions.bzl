@@ -89,12 +89,6 @@ versions = {
             "SHA256": "a9f1c3e448620c9161dfc6e6f6338e58987d8bda45a9024dd846c9f6c04c0b78",
         },
         {
-            # https://www.curseforge.com/minecraft/mc-mods/reauth-fabric/files
-            "name": "reauth-fabric",
-            "file_id": 3039637,
-            "SHA256": "b81beda022131146b81792900d17cf32bcd8a3a333317ce9bc48133dc08bca1f",
-        },
-        {
             # https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items/files
             "name": "roughly-enough-items",
             "file_id": 3065976,
@@ -123,10 +117,90 @@ versions = {
             "name": "hwyla-addon-horse-info",
             "file_id": 3021434,
         },
+        # {
+        #     # https://www.curseforge.com/minecraft/mc-mods/trajectoryfabric/files
+        #     "name": "trajectoryfabric",
+        #     "file_id": 3041000,
+        # },
         {
-            # https://www.curseforge.com/minecraft/mc-mods/trajectoryfabric/files
-            "name": "trajectoryfabric",
-            "file_id": 3041000,
+            # https://www.curseforge.com/minecraft/mc-mods/auth-me/files
+            "name": "authme",
+            "file_id": 3039820,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/better-title-screen/files
+            "name": "better-title-screen",
+            "file_id": 3033233,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/blur-fabric/files
+            "name": "blur",
+            "file_id": 3034801,
+        },
+        # {
+        #     # https://www.curseforge.com/minecraft/mc-mods/worldedit/files
+        #     "name": "worldedit",
+        #     "file_id": 3100515,
+        # },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/cleancut/files
+            "name": "cleancut",
+            "file_id": 2994761,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/controlling-for-fabric/files
+            "name": "controlling",
+            "file_id": 3039289,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/giselbaers-durability-viewer/files
+            "name": "giselbaers-durability-viewer",
+            "file_id": 3029687,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/dynamic-fps/files
+            "name": "dynamic-fps",
+            "file_id": 3032499,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/dynamic-sound-filters/files
+            "name": "dynamic-sound-filters",
+            "file_id": 3029490,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/light-overlay/files
+            "name": "light-overlay",
+            "file_id": 3091376,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/modmenu/files
+            "name": "modmenu",
+            "file_id": 3023985,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/name-pain/files
+            "name": "name-pain",
+            "file_id": 3096930,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/not-enough-crashes/files
+            "name": "not-enough-crashes",
+            "file_id": 3038498,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/presence-footsteps/files
+            "name": "presence-footsteps",
+            "file_id": 3042936,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/roughly-enough-resources/files
+            "name": "roughly-enough-resources",
+            "file_id": 3060390,
+        },
+        {
+            # https://www.curseforge.com/minecraft/mc-mods/slight-gui-modifications/files
+            "name": "slight-gui-modifications",
+            "file_id": 3083832,
         },
     ],
     "shaders": [

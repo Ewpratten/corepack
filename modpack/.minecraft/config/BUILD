@@ -49,16 +49,66 @@ expand_template(
     template = "xaerominimap.txt.in",
 )
 
+expand_template(
+    name = "blur",
+    out = "blur.json",
+    substitutions = {},
+    template = "blur.json.in",
+)
+
+expand_template(
+    name = "durabilityviewer",
+    out = "durabilityviewer.json",
+    substitutions = {},
+    template = "durabilityviewer.json.in",
+)
+
+expand_template(
+    name = "modmenu",
+    out = "modmenu.json",
+    substitutions = {},
+    template = "modmenu.json.in",
+)
+
+expand_template(
+    name = "notenoughcrashes",
+    out = "notenoughcrashes.json",
+    substitutions = {},
+    template = "notenoughcrashes.json.in",
+)
+
+expand_template(
+    name = "lightoverlay",
+    out = "lightoverlay.properties",
+    substitutions = {},
+    template = "lightoverlay.properties.in",
+)
+
+expand_template(
+    name = "namepain",
+    out = "namepain.toml",
+    substitutions = {},
+    template = "namepain.toml.in",
+)
+
 filegroup(
     name = "config",
     srcs = [
         ":appleskin_client",
+        ":blur",
+        ":durabilityviewer",
         ":gameinfo",
         ":gamemode_overhaul",
+        ":lightoverlay",
+        ":modmenu",
+        ":namepain",
+        ":notenoughcrashes",
         ":trajectoryconfig",
         ":xaerominimap",
         ":xaeropatreon",
         ":xaeroworldmap",
+        "//modpack/.minecraft/config/presencefootsteps",
+        "//modpack/.minecraft/config/slightguimodifications",
         "//modpack/.minecraft/config/waila",
     ],
     visibility = ["//visibility:public"],
