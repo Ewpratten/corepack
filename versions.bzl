@@ -3,7 +3,7 @@
 versions = {
     "corepack": {
         "name": "CorePack",
-        "version": "1.16.2-rc1",
+        "version": "1.16.4",
     },
     "multimc": {
         "pack": {
@@ -11,10 +11,10 @@ versions = {
                 "version": "3.2.2",
             },
             "minecraft": {
-                "version": "1.16.2",
+                "version": "1.16.4",
             },
             "fabric": {
-                "version": "0.9.3+build.207",
+                "version": "0.10.6+build.214",
             },
         },
     },
